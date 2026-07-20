@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/Favicon-negro.svg" type="image/svg+xml">
+  
+  <title>Portfolio de Desarrollador Fullstack Jr. - Joaquín Flores</title>
+  <meta name="description" content="Portafolio de Joaquín Flores, Desarrollador Full Stack Junior y Analista de Sistemas. React, Node.js y lógica aplicada. Mirá mis proyectos y contactame.">
+  <meta name="keywords" content="desarrollador web, desarrollador fullstack, programador junior, portafolio de programador, programador react">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio de Desarrollador Fullstack Jr. - Joaquín Flores">
+  <meta property="og:description" content="Portafolio de Joaquín Flores, Desarrollador Full Stack Junior y Analista de Sistemas. React, Node.js y lógica aplicada. Mirá mis proyectos y contactame.">
+  <meta property="og:image" content="https://joaquin-flores.github.io/Portfolio/assets/images/Portfolio-Hola-soy-Joaquin-Flores.webp">
+  <meta property="og:url" content="https://joaquin-flores.github.io/Portfolio/" />
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Portfolio de Desarrollador Fullstack Jr. - Joaquín Flores">
+  <meta property="twitter:description" content="Portafolio de Joaquín Flores, Desarrollador Full Stack Junior y Analista de Sistemas. React, Node.js y lógica aplicada. Mirá mis proyectos y contactame.">
+  <meta property="twitter:image" content="https://joaquin-flores.github.io/Portfolio/assets/images/Portfolio-Hola-soy-Joaquin-Flores.webp">
+  
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<!-- Hacer todo el sitio responsive :) -->
+<body class="bg-dark">
+
+  <!-- Header -->
+   <!-- Agregar botón de versión clara/oscura -->
+  <header>
+    <nav class="nav justify-content-center bg-black fixed-top py-2">
+      <a class="nav-link text-sand" href="#projects">Proyectos</a>
+      <a class="nav-link text-sand" href="#about">Sobre mi</a>
+      <a class="nav-link text-sand" href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="min-vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Imagen -->
+        <div class="col-lg-6 text-center my-5">
+          <img src="assets/images/profile.webp" class="img-fluid rounded-4 shadow-lg" alt="Foto de perfil de Joaquín Flores" />
+        </div>
+        
+        <!-- Texto -->
+        <div class="col-lg-6 text-center text-lg-start my-4 mb-lg-0">
+          <div class="text-sand text-center text-consolas">
+            <h1 class="display-4 float">¡Hola, soy Joaquín Flores!</h1>
+            <p class="lead">Desarrollador Fullstack Junior.</p>
+            <a class="btn btn-light text-uppercase" href="#projects">
+              Proyectos <i class="fa fa-angle-down"></i>
+            </a>
+            <a class="btn btn-outline-light" download href="assets/CV.pdf">
+              CV <i class="fa fa-file-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-0">
+    <div class="container">
+      <div class="text-sand text-center">
+        <p class="fs-3">
+          Personas antes que sistemas.<br>
+          Problemas claros antes que soluciones mal comprendidas.<br>
+          Creatividad, ingenio y composición antes que producción industrial.
+        </p>
+        <a class="btn btn-light mt-5" href="#projects">
+          <i class="fa fa-angle-down px-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container-fluid">
+
+      <!-- Título de la sección -->
+      <h2 class="text-center display-6 mb-5 text-sand fw-bold">Proyectos</h2>
+
+      <!-- Primer fila -->
+      <div class="row">
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Primer tarjeta -->
+          <div class="card shadow hover-effect smooth-transition overflow-hidden">
+            <a href="#collapseCard1" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard1">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">🚜Tambo</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard1">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>Tambo es un sistema integral para administración de pequeños campos y granjas.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">.NET</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">C#</p>
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa fa-database fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js-square fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Tambo" target="_blank">
+                    <img src="assets/images/thumbnail-Tambo.webp" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Segunda tarjeta -->
+          <div class="card shadow hover-effect smooth-transition overflow-hidden">
+            <a href="#collapseCard2" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">💡Sabios</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard2">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>Sabios es un juego de trivia católica. Tiene una tienda, lógica de puntaje y más. Visita aquí el <a href="https://joaquin-flores.github.io/Sabios" target="_blank">sitio en vivo</a></p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">.json</p>
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js-square fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Sabios" target="_blank">
+                    <img src="assets/images/thumbnail-Sabios.webp" alt="Thumbnail Sabios" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Tercer tarjeta -->
+          <div class="card shadow hover-effect smooth-transition overflow-hidden">
+            <a href="#collapseCard3" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">🐍Snake</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard3">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>Snake es el juego retro clásico. Desarrollado utilizando conceptos claves de POO.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Java</p>
+                    <i class="fa fa-mug-hot fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Snake" target="_blank">
+                    <img src="assets/images/thumbnail-Snake.webp" alt="Thumbnail Snake" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Cuarta tarjeta -->
+          <div class="card shadow hover-effect smooth-transition overflow-hidden">
+            <a href="#collapseCard4" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">🔢Calculadora</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard4">
+              <div class="card-body row">
+                <div class="col-sm-6">
+                  <p>Calculadora web simple e intuitiva para realizar operaciones básicas al instante.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js-square fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://joaquin-flores.github.io/Calculator/" target="_blank">
+                    <img src="assets/images/thumbnail-Calculadora.webp" alt="Thumbnail Calculadora" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda fila -->
+      <div class="row">
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Quinta tarjeta -->
+          <div class="card shadow hover-effect smooth-transition">
+            <a href="#collapseCard5" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard5">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">☀️App de clima</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard5">
+              <div class="card-body row">
+                <div class="col-sm-6">
+                  <p>Consulta el clima actual y pronósticos con una interfaz clara y rápida.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js-square fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://joaquin-flores.github.io/Weather-app/" target="_blank">
+                    <img src="assets/images/thumbnail-Clima.webp" alt="Thumbnail App de clima" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Sexta tarjeta -->
+          <div class="card shadow hover-effect smooth-transition">
+            <a href="#collapseCard6" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">🎨Color picker</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard6">
+              <div class="card-body row">
+                <div class="col-sm-6">
+                  <p>En color picker puedes elegir colores y copiar su código hex fácilmente con una vista previa clara.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js-square fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://joaquin-flores.github.io/Color-Picker/" target="_blank">
+                    <img src="assets/images/thumbnail-Color.webp" alt="Thumbnail Color picker" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Título de la segunda sección -->
+      <h2 class="text-center display-6 my-5 text-sand fw-bold">Sitios web</h2>
+
+      <!-- Primer fila -->
+      <div class="row">
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Primer tarjeta -->
+          <div class="card shadow hover-effect smooth-transition overflow-hidden">
+            <a href="#collapseCard7" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard7">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">📦Punto Módulo</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard7">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>
+                    En Punto Módulo ofrecen casas expandibles,
+                    transportables a cualquier punto del país.<br>
+                    Buscaban comenzar un sitio web de cero, 
+                    que permita convertir visitantes en clientes.
+                     <a href="https://puntomodulo.com/" target="_blank">
+                      sitio en vivo
+                    </a>
+                  </p>
+                  <p class="fst-italic">Fases:</p>
+                  <div class="d-flex my-3 flex-wrap">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Servidor</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Diseño</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Implementación</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Mantenimiento</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://puntomodulo.com/" target="_blank">
+                    <img src="assets/images/thumbnail-sitio-web-punto-modulo.webp" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-6 my-2">
+
+          <!-- Segunda tarjeta -->
+          <div class="card shadow hover-effect smooth-transition overflow-hidden">
+            <a href="#collapseCard8" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard8">
+              <div class="col-10">
+                <h3 class="m-0 fw-bold h4">⚖️Juan Iturralde</h3>
+              </div>  
+              <div class="col-2 text-end">
+                <i class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard8">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>
+                     Juan Iturralde es abogado y ofrece sus servicios de cobranza.<br>
+                     Buscaba rediseñar su sitio web de presentación personal 
+                     para mejorar su visibilidad y profesionalismo.
+                     <a href="https://juaniturralde.com/" target="_blank">
+                      sitio en vivo
+                    </a>
+                  </p>
+                  <p class="fst-italic">Fases:</p>
+                  <div class="d-flex my-3 flex-wrap">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Servidor</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Diseño</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Implementación</p>
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Mantenimiento</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://juaniturralde.com/" target="_blank">
+                    <img src="assets/images/thumbnail-sitio-web-Juan-Iturralde.webp" alt="Thumbnail Juan Iturralde" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container text-sand">
+      <h2 class="display-6 fw-bold mb-4 text-center">Sobre mí</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="mb-4 about-paragraph">
+            <h4>📌 Cómo empecé a programar</h4>
+            <p>
+              Decidí estudiar Ingeniería Informática porque me fascina la programación. 
+              Me apasiona la resolución de problemas y el enfoque lógico que se le puede dar,
+              además de las ciencias en general.
+            </p>
+          </div>
+        
+          <div class="mb-4 about-paragraph">
+            <h4>💡 Mis intereses</h4>
+            <p>
+              Me interesa especialmente el desarrollo web, tanto del lado del backend como del frontend.
+              Me atraen los proyectos que combinan creatividad, lógica y una buena experiencia de usuario.
+              También tengo un interés profundo en la filosofía, lo cual complementa mi formación técnica 
+              con una mirada crítica y humanista.
+            </p>
+          </div>
+        
+          <div class="mb-4 about-paragraph">
+            <h4>🎯 Objetivos actuales</h4>
+            <p>
+              Como ingeniero informático en formación, quiero seguir incorporando herramientas sólidas
+              y modernas que me permitan aportar a proyectos reales con una visión estratégica. 
+              Me encanta trabajar en equipos que valoren la calidad del trabaja, busquen la mejora 
+              continua y el aprendizaje constante.
+            </p>
+          </div>
+        
+          <div class="mb-4 about-paragraph">
+            <h4>🛠 Tecnologías y herramientas que manejo</h4>
+            <ul class="list-inline user-select-none">
+              <li class="list-inline-item badge bg-secondary">React JS</li>
+              <li class="list-inline-item badge bg-secondary">SQL</li>
+              <li class="list-inline-item badge bg-secondary">.NET</li>
+              <li class="list-inline-item badge bg-secondary">Linux</li>
+              <li class="list-inline-item badge bg-secondary">Java</li>
+              <li class="list-inline-item badge bg-secondary">HTML/CSS/JS</li>
+              <li class="list-inline-item badge bg-secondary">Metodologías ágiles</li>
+              <li class="list-inline-item badge bg-secondary">Estrategia SEO</li>
+              <li class="list-inline-item badge bg-secondary">CMS (Divi/Wix/Elementor)</li>
+            </ul>
+          </div>
+        
+          <div class="mb-4 about-paragraph">
+            <h4>😊 Algo personal</h4>
+            <p>
+              Fuera del código, disfruto de la filosofía, la lectura profunda y el mate. Soy curioso por naturaleza, detallista en lo que hago, y creo que los buenos proyectos se construyen con empatía y poniendo el foco en las personas.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img src="assets/images/Joaquin-Flores-build-a-website-humaaan.webp" class="img-fluid" alt="Joaquin Flores humaaan">
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-light text-uppercase mt-3" download href="assets/CV.pdf">
+          Descargar CV <i class="fa fa-file-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- sescción Experiencia y educación -->
+
+<!-- Sección blog, compartiendo notas -->
+
+  <!-- Contact -->
+   <section id="contact" class="py-5 bg-success-subtle">
+    <!-- Contact form -->
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold display-6">Contactame</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="https://formspree.io/f/manoqypb" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required placeholder="ejemplo@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Deja un mensaje..."></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Enviar mensaje <i class="fa fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4 text-center text-md-start">
+        <h3 class="h4 fw-bold py-4">¿Buscas un Analista de Ciberseguridad?</h3>
+        <p class="text-muted">Mirá el perfil de mi amigo Juan:</p>
+        <div class="overflow-hidden">
+          <a href="https://juancho.com.ar" target="_blank" rel="noopener noreferrer">
+            <!-- img-fluid es la clave para que no desborde -->
+            <img src="assets/images/shell_nmap.gif" alt="shell nmap" class="img-fluid d-block mx-auto">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other contact methods -->
+    <div class="container text-center mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="mb-4 h3">O buscame en mis redes sociales</h2>
+          <a href="https://www.linkedin.com/in/joaquin-flores-764428215/"><i class="fa-brands fa-linkedin text-black-50 fa-3x mx-2 hover-effect smooth-transition smooth-transition"></i></a>
+          <a href="https://github.com/Joaquin-Flores"><i class="fa-brands fa-github text-black-50 fa-3x mx-2 hover-effect smooth-transition smooth-transition"></i></a>
+          <a href="https://discord.gg/qrpEBP7CC7"><i class="fa-brands fa-discord text-black-50 fa-3x mx-2 hover-effect smooth-transition smooth-transition"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+     <!-- CV descargable en PDF -->
+  <div class="position-fixed bottom-0 end-0 ps-3 pb-3 pe-0" style="z-index: 1050;">
+    <a href="https://webring.com.ar"><img src="https://webring.com.ar/fotos/widget.png" 
+        class="img-fluid" 
+        style="width: 22vw; max-width: 150px;" 
+        alt="Widget"></a>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark bg-gradient text-center p-4">
+    <div class="text-sand">
+      © 2026 | Desarrollado por Joaquín Flores
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
